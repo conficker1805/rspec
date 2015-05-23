@@ -50,5 +50,8 @@ group :development, :test do
 
   # Minitest-compatible rails functionality
   gem 'shoulda-matchers'
+
+  # Straightforward definition syntax
+  gem 'factory_girl_rails'
 end
 
