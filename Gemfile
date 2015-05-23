@@ -61,5 +61,8 @@ group :development, :test do
 
   # Load environment variables from .env into ENV in development
   gem 'dotenv-rails'
+
+  # Rails error page with a much better error
+  gem 'better_errors'
 end
 
