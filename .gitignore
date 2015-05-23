@@ -22,6 +22,9 @@
 # Ignore Macbook temp folder
 *.DS_Store
 
-#Ignore VIM swp files
+# Ignore VIM swp files
 *.swp
 *.swo
+
+# Ignore .ENV file
+.env

@@ -53,5 +53,8 @@ group :development, :test do
 
   # Straightforward definition syntax
   gem 'factory_girl_rails'
+
+  # Load environment variables from .env into ENV in development
+  gem 'dotenv-rails'
 end
 
