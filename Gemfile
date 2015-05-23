@@ -34,6 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Development
 gem 'slim'
+gem 'enumerize'
 gem 'simple_form'
 
 group :development, :test do
