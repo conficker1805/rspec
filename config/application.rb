@@ -31,5 +31,13 @@ module Project
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    config.autoload_paths += %W(#{config.root}/lib)
+    
+    require 'ext/string'
+    require 'ext/number'
+    require 'ext/time'
+    require 'ext/date'
+    require 'ext/hash'
+    require 'ext/array'
   end
 end
