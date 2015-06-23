@@ -39,8 +39,10 @@ gem 'slim'
 gem 'devise'
 gem 'enumerize'
 gem 'simple_form'
-gem 'rails_admin'
 gem 'meta-tags'
+gem 'rails_admin'
+gem 'rails_admin_toggleable'
+gem 'font-awesome-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -66,6 +68,9 @@ group :development, :test do
 
   # Rails error page with a much better error
   gem 'better_errors'
+
+  # Pretty print your Ruby objects  
+  gem 'awesome_print'
 end
 
 group :production do
