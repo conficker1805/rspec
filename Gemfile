@@ -42,6 +42,7 @@ gem 'simple_form'
 gem 'meta-tags'
 gem 'seedbank'
 gem 'rails_admin'
+gem 'draper', '~> 1.3'
 gem 'rails_admin_toggleable'
 gem 'font-awesome-rails'
 
@@ -70,7 +71,7 @@ group :development, :test do
   # Rails error page with a much better error
   gem 'better_errors'
 
-  # Pretty print your Ruby objects  
+  # Pretty print your Ruby objects
   gem 'awesome_print'
 end
 

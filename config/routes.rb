@@ -14,7 +14,16 @@ Rails.application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+    resource :enterprises do
+      get :rspec_json
+      get :rspec_nothing
+      get :rspec_template
+      get :rspec_redirect
+      get :rspec_flash_message
+      get :rspec_http_status
+    end
+
+    resources :employees
 
   # Example resource route with options:
   #   resources :products do
@@ -50,6 +59,7 @@ Rails.application.routes.draw do
   #   resources :photos, concerns: :toggleable
 
   # Example resource route within a namespace:
+
   #   namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController
   #     # (app/controllers/admin/products_controller.rb)
