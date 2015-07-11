@@ -7,6 +7,7 @@ class CreateEmployees < ActiveRecord::Migration
       t.datetime    :birthday
       t.float       :salary
       t.references  :enterprise
+      t.references  :team
 
       t.timestamps
     end

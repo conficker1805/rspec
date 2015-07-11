@@ -24,6 +24,7 @@ Rails.application.routes.draw do
     end
 
     resources :employees
+    resources :teams
 
   # Example resource route with options:
   #   resources :products do

@@ -45,6 +45,8 @@ gem 'rails_admin'
 gem 'draper', '~> 1.3'
 gem 'rails_admin_toggleable'
 gem 'font-awesome-rails'
+gem 'cells', "~> 4.0.0"
+gem 'cells-slim'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
