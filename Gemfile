@@ -49,6 +49,10 @@ gem 'cells', "~> 4.0.0"
 gem 'cells-slim'
 gem 'react-rails', '~> 1.0'
 
+# API
+gem 'grape'
+gem 'grape-jbuilder'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
