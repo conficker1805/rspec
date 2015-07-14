@@ -29,6 +29,10 @@ module Rspec
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    # Auto-load app/api
+    config.paths.add File.join('app', 'api')
+    config.autoload_paths += Dir[Rails.root.join('app', 'api')]
+
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
     config.autoload_paths += %W(#{config.root}/lib)
@@ -39,5 +43,9 @@ module Rspec
     require 'ext/date'
     require 'ext/hash'
     require 'ext/array'
+
+    config.middleware.use(Rack::Config) do |env|
+      env['api.tilt.root'] = Rails.root.join 'app', 'views', 'api'
+    end
   end
 end

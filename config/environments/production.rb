@@ -80,4 +80,7 @@ Rails.application.configure do
   # React configuration
   config.react.variant = :production
   config.react.addons = true
+
+  # API configuration
+  routes.default_url_options = { host: 'www.yoursite.com' }
 end
