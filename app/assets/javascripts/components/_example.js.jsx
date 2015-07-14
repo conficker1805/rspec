@@ -1,3 +1,4 @@
+// Example 1
 var Hello = React.createClass({
   render: function () {
     return <h3>Hello {this.props.message}!</h3>;
@@ -18,3 +19,20 @@ $(document).ready(function () {
   React.render(<Hello message="world" />, target_description);
 });
 
+// Example 2
+var CurrentTime = React.createClass({
+  render: function() {
+    return (
+      <p>
+        {this.props.label} {this.props.date.toTimeString()}
+      </p>
+    );
+  }
+});
+
+setInterval(function() {
+  React.render(
+    <CurrentTime date={new Date()} label='It is' />,
+    document.getElementById('now')
+  );
+}, 500);
