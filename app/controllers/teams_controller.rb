@@ -4,8 +4,3 @@ class TeamsController < ApplicationController
     @leader_name = cell(:team).(:leader)
   end
 end
-
-
-
-dcsfjdsfksd " sdfksdjfksf sdkfjsd"
-{ create: dsf }
